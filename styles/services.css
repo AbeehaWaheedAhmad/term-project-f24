@@ -3,55 +3,70 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
-    padding: 15px;
+    background-color: #0073e6;
+    padding: 15px 0;
+}
+
+nav {
     text-align: center;
 }
 
-header nav ul {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    color: #0073e6;
+}
+
+.services ul {
     list-style-type: none;
     padding: 0;
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background-color: #0066cc;
-    color: white;
-    text-align: center;
-    padding: 50px;
-}
-
-.hero .cta-button {
-    background-color: #ff6600;
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-section {
-    padding: 20px;
-    text-align: center;
-    background-color: white;
-    margin: 20px 0;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+.services ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: #fff;
     padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-top: 40px;
 }
